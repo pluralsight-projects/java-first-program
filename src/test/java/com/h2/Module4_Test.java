@@ -410,6 +410,6 @@ public class Module4_Test {
         Method method = mortgageCalculator.getMethod("main", String[].class);
         method.invoke(null, (Object) new String[]{loanAmount, termInYears, annualRate});
 
-        assertEquals("monthlyPayment: 1221.14" + "\n", testOut.toString());
+        assertEquals("monthlyPayment: 1221.14" + System.lineSeparator(), testOut.toString());
     }
 }
