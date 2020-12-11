@@ -363,6 +363,6 @@ public class Module3_Test {
         Method method = savingsCalculator.getMethod("main", String[].class);
         method.invoke(null, (Object) new String[]{credits, debits});
 
-        assertEquals("Net Savings = 5.0, remaining days in month = " + remainingDays + "\n", testOut.toString());
+        assertEquals("Net Savings = 5.0, remaining days in month = " + remainingDays + System.lineSeparator(), testOut.toString());
     }
 }
