@@ -162,7 +162,7 @@ public class Module2_Test {
         //noinspection JavaReflectionInvocation
         main.invoke(null, (Object) null);
 
-        List<String> outputList = Arrays.stream(getOutput().split("\n")).collect(Collectors.toList());
+        List<String> outputList = Arrays.stream(getOutput().split("\\R")).collect(Collectors.toList());
         assertEquals("Enter your name", outputList.get(0));
         assertEquals("Hello " + name, outputList.get(1));
     }
